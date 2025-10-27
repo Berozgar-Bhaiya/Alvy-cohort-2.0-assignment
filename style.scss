@@ -89,6 +89,7 @@ body {
     gap: 1rem;
 
     .studio__image-top {
+      object-fit: cover;
       border-radius: 0.5rem;
     }
 
@@ -189,10 +190,11 @@ body {
     gap: 1rem;
 
     .philosophy__image-top {
+      object-fit: cover;
       border-radius: 0.5rem;
     }
 
-    .philosophy__content{
+    .philosophy__content {
       border-radius: 0.5rem;
       background-color: $color-surface;
       display: flex;
@@ -221,6 +223,54 @@ body {
           margin-top: 0.8rem;
           color: $color-grey;
           font-size: 1.13rem;
+          font-weight: 500;
+          font-family: satoshi;
+        }
+      }
+    }
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+
+    .vision__image-top {
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .vision__content {
+      border-radius: 0.5rem;
+      background-color: $color-surface;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 1.8rem;
+
+      .vision__subtitle {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: robo;
+        color: $color-text-light;
+      }
+
+      .vision__text {
+        .vision__heading {
+          color: $color-text-light;
+          font-size: 2.08rem;
+          font-family: chill;
+          font-weight: 400;
+          line-height: 2.5rem;
+          text-transform: uppercase;
+        }
+
+        .vision__description {
+          margin-top: 0.8rem;
+          color: $color-grey;
+          font-size: 1.13rem;
+          line-height: 1.75rem;
           font-weight: 500;
           font-family: satoshi;
         }

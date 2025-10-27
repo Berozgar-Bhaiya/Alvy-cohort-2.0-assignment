@@ -86,6 +86,8 @@ body {
   gap: 1rem;
 }
 .main .studio .studio__image-top {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
 }
 .main .studio .studio__content {
@@ -175,6 +177,8 @@ body {
   gap: 1rem;
 }
 .main .philosophy .philosophy__image-top {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
 }
 .main .philosophy .philosophy__content {
@@ -203,6 +207,47 @@ body {
   margin-top: 0.8rem;
   color: #9e9d9a;
   font-size: 1.13rem;
+  font-weight: 500;
+  font-family: satoshi;
+}
+.main .vision {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.main .vision .vision__image-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main .vision .vision__content {
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1.8rem;
+}
+.main .vision .vision__content .vision__subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: robo;
+  color: #f4f2ed;
+}
+.main .vision .vision__content .vision__text .vision__heading {
+  color: #f4f2ed;
+  font-size: 2.08rem;
+  font-family: chill;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+.main .vision .vision__content .vision__text .vision__description {
+  margin-top: 0.8rem;
+  color: #9e9d9a;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
   font-weight: 500;
   font-family: satoshi;
 }

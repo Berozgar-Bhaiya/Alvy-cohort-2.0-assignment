@@ -53,6 +53,7 @@ body {
   font-family: robo;
   font-size: 0.9rem;
   font-weight: 400;
+  cursor: pointer;
 }
 .main .main__nav .main__nav-menu .git_btn {
   display: none;
@@ -140,6 +141,70 @@ body {
   font-family: robo;
   font-weight: 400;
   color: #f4f2ed;
+}
+.main .stats {
+  padding: 1.3rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main .stats .stats__top,
+.main .stats .stats__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .stats .stats__top .stats__item .stats__label,
+.main .stats .stats__bottom .stats__item .stats__label {
+  color: #9e9d9a;
+  text-transform: uppercase;
+  font-family: robo;
+  text-align: center;
+}
+.main .stats .stats__top .stats__item .stats__number,
+.main .stats .stats__bottom .stats__item .stats__number {
+  color: #f4f2ed;
+  font-family: chill;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.main .philosophy {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.main .philosophy .philosophy__image-top {
+  border-radius: 0.5rem;
+}
+.main .philosophy .philosophy__content {
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1.8rem;
+}
+.main .philosophy .philosophy__content .philosophy__subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: robo;
+  color: #f4f2ed;
+}
+.main .philosophy .philosophy__content .philosophy__text .philosophy__heading {
+  color: #f4f2ed;
+  font-size: 2.08rem;
+  font-family: chill;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+.main .philosophy .philosophy__content .philosophy__text .philosophy__description {
+  margin-top: 0.8rem;
+  color: #9e9d9a;
+  font-size: 1.13rem;
+  font-weight: 500;
+  font-family: satoshi;
 }
 
 @media (min-width: 768px) {

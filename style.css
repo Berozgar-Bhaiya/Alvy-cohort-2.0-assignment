@@ -473,12 +473,7 @@ body {
   }
   .main .stats .stats__top,
   .main .stats .stats__bottom {
-    display: flex;
     gap: 14rem;
-  }
-  .main .stats .stats__top .stats__item .stats__label,
-  .main .stats .stats__bottom .stats__item .stats__label {
-    white-space: nowrap;
   }
   .main .stats .stats__top .stats__item .stats__number,
   .main .stats .stats__bottom .stats__item .stats__number {

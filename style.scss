@@ -553,11 +553,9 @@ body {
 
       .stats__top,
       .stats__bottom {
-        display: flex;
         gap: 14rem;
         .stats__item {
           .stats__label {
-            white-space: nowrap;
           }
           .stats__number {
             padding-top: 0.4rem;

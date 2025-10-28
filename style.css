@@ -468,8 +468,25 @@ body {
     line-height: 2.1rem;
     font-weight: 500;
   }
+  .main .stats {
+    gap: 14rem;
+  }
+  .main .stats .stats__top,
+  .main .stats .stats__bottom {
+    display: flex;
+    gap: 14rem;
+  }
+  .main .stats .stats__top .stats__item .stats__label,
+  .main .stats .stats__bottom .stats__item .stats__label {
+    white-space: nowrap;
+  }
+  .main .stats .stats__top .stats__item .stats__number,
+  .main .stats .stats__bottom .stats__item .stats__number {
+    padding-top: 0.4rem;
+    font-size: 4rem;
+  }
   .main .philosophy .philosophy__content {
-    gap: 12rem;
+    gap: 13rem;
     padding: 4rem;
   }
   .main .philosophy .philosophy__content .philosophy__text .philosophy__heading {

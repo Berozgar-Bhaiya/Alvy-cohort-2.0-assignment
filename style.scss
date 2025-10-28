@@ -548,9 +548,28 @@ body {
       }
     }
 
+    .stats {
+      gap: 14rem;
+
+      .stats__top,
+      .stats__bottom {
+        display: flex;
+        gap: 14rem;
+        .stats__item {
+          .stats__label {
+            white-space: nowrap;
+          }
+          .stats__number {
+            padding-top: 0.4rem;
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+
     .philosophy {
       .philosophy__content {
-        gap: 12rem;
+        gap: 13rem;
         padding: 4rem;
 
         .philosophy__text {

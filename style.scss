@@ -13,6 +13,8 @@ body {
   background-color: #121212;
 }
 
+//------Mixins--------------//
+
 @mixin button($color, $background-color) {
   padding: 1rem 1.4rem;
   border-radius: 0.5rem;
@@ -30,6 +32,63 @@ body {
   align-items: $align;
   gap: $gap;
 }
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+@mixin card_design {
+  .card__top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.3rem 2.5rem;
+    gap: 0.6rem;
+
+    .icon {
+      color: #dcd9d5;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      border: 1px solid #514e4c;
+      padding: 0.6rem 0.65rem;
+      background-color: #7c7c7c73;
+      backdrop-filter: blur(4px);
+    }
+  }
+
+  .card__bottom {
+    border-radius: 0.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #6e645f;
+    background-color: #75727273;
+    backdrop-filter: blur(1rem);
+
+    .card__bottom-heading {
+      font-size: 1.35rem;
+      font-family: chill;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $color-text-light;
+    }
+
+    .card__bottom-role {
+      color: $color-text-light;
+      font-weight: 400;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: robo;
+    }
+  }
+}
+//------Main code--------------//
 
 .main {
   width: 100%;
@@ -81,6 +140,8 @@ body {
       }
     }
   }
+
+  //------Studio section--------------//
 
   .studio {
     display: flex;
@@ -154,6 +215,8 @@ body {
     }
   }
 
+  //------Stats section--------------//
+
   .stats {
     padding: 1.3rem 1.8rem;
     display: flex;
@@ -182,6 +245,8 @@ body {
       }
     }
   }
+
+  //------Philosophy section--------------//
 
   .philosophy {
     display: flex;
@@ -230,10 +295,12 @@ body {
     }
   }
 
+  //------vision section--------------//
+
   .vision {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
+    margin-top: 1rem;
     gap: 1rem;
 
     .vision__image-top {
@@ -277,7 +344,183 @@ body {
       }
     }
   }
+
+  //------Team section---------------//
+  .team {
+    .team__content {
+      padding: 0 1em;
+      padding: 1.2rem;
+      .team__content-heading {
+        font-size: 2rem;
+        color: $color-text-light;
+        font-weight: 500;
+        font-family: chill;
+        text-transform: uppercase;
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .card-1 {
+        @include card();
+        @include card_design();
+        background-image: url(Assets/Images/team_1.webp);
+      }
+      .card-2 {
+        @include card();
+        @include card_design();
+        background-image: url(Assets/Images/team_2.webp);
+      }
+      .card-3 {
+        @include card();
+        @include card_design();
+        background-image: url(Assets/Images/team_3.webp);
+      }
+    }
+  }
+  //--------- Join team section ------------//
+
+  .jointeam {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+
+    .jointeam__image-top {
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .jointeam__content {
+      border-radius: 0.5rem;
+      background-color: $color-surface;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      padding: 1.8rem;
+
+      .jointeam__subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: robo;
+        color: #979693;
+      }
+
+      .jointeam__text {
+        .jointeam__heading {
+          color: $color-text-light;
+          font-size: 2rem;
+          font-family: chill;
+          font-weight: 400;
+          line-height: 2.5rem;
+          text-transform: uppercase;
+        }
+
+        .jointeam__actions {
+          @include flex(flex-start, center, 0.7rem);
+          margin-top: 3.7rem;
+
+          .jointeam__btn {
+            border: 1px solid #474747;
+            border-radius: 50%;
+            padding: 0.65rem 0.7rem;
+            background-color: #292929;
+            color: $color-text-light;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+
+          .jointeam__btn-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-family: robo;
+            font-weight: 400;
+            color: $color-text-light;
+          }
+        }
+      }
+    }
+  }
+
+  // ------- contact section -----------------//
+  .contact {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    background-color: $color-primary;
+
+    .contact__subtitle {
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      font-family: robo;
+      text-transform: uppercase;
+    }
+
+    .contact__heading {
+      font-family: chill;
+      font-size: 2.6rem;
+      line-height: 2.7rem;
+      width: 90%;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .contact__btn {
+      background-color: $color-background;
+      color: $color-text-light;
+      text-transform: uppercase;
+      font-family: robo;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1rem;
+    }
+  }
+
+  // ---------- socialmedia handles section --------------//
+
+  .socialhandles {
+    background-color: $color-surface;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    .socialhandles__icons {
+      display: flex;
+      gap: 0.6rem;
+
+      .icon {
+        color: $color-text-light;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        border: 1px solid #494949;
+        padding: 0.6rem 0.65rem;
+        background-color: #292929;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+  }
 }
+//------Responisve for mobile view--------------//
 
 @media (min-width: 768px) {
   .main {
@@ -391,6 +634,8 @@ body {
     }
   }
 }
+
+//------Responsive for tablet view--------------//
 
 @media (min-width: 1024px) {
   .main {
@@ -524,6 +769,8 @@ body {
   }
 }
 
+//------Responsive for laptop view--------------//
+
 @media (min-width: 1440px) {
   .main {
     .studio {
@@ -532,7 +779,7 @@ body {
 
         .studio__text {
           .studio__heading {
-            font-size: 4rem;
+            font-size: 3.87rem;
             font-family: chill;
             line-height: 4.6rem;
             text-transform: uppercase;
@@ -591,7 +838,7 @@ body {
         padding: 4rem;
 
         .vision__text {
-          .vision__heading {  
+          .vision__heading {
             margin-bottom: 1rem;
             font-size: 3.1rem;
             line-height: 3.78rem;
@@ -607,6 +854,8 @@ body {
     }
   }
 }
+
+//------Responsive for laptop 4k view--------------//
 
 @media (min-width: 2560px) {
   .main {
@@ -652,7 +901,7 @@ body {
           }
         }
       }
-    } 
+    }
 
     .philosophy {
       .philosophy__content {

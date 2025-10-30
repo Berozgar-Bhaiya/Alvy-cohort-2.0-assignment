@@ -541,6 +541,131 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.main .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+}
+.main .pages .bottom__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+.main .pages .bottom__nav .bottom__nav-heading {
+  color: #f4f2ed;
+  font-family: chill;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.main .pages .bottom__nav .page__links {
+  color: #9e9d9a;
+  font-family: robo;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main .pages .bottom__nav .bottom__nav-btn {
+  color: #121212;
+  font-family: robo;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #cebd63;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.main .pages .cms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+.main .pages .cms .cms-heading {
+  color: #f4f2ed;
+  font-family: chill;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.main .pages .cms .page__links {
+  color: #9e9d9a;
+  font-family: robo;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main .pages .utility__pages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+.main .pages .utility__pages .utility__pages-heading {
+  color: #f4f2ed;
+  font-family: chill;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.main .pages .utility__pages .page__links {
+  color: #9e9d9a;
+  font-family: robo;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main .credits {
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.main .credits .credits-heading {
+  color: #9e9d9a;
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: robo;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.main .credits .credits-heading .credits__links {
+  color: #f4f2ed;
+}
+.main .credits .credtis-content {
+  color: #f4f2ed;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: robo;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.main .credits .credtis-content .top__btn {
+  border: 1px solid #494949;
+  background-color: #292929;
+  color: #f4f2ed;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
 
 @media (min-width: 768px) {
   .main .main__nav .main__nav-menu .git_btn {

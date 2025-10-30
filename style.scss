@@ -519,7 +519,152 @@ body {
       }
     }
   }
+
+  // --------------pages----------------------//
+  .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: $color-surface;
+
+    .bottom__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      text-transform: uppercase;
+
+      .bottom__nav-heading {
+        color: $color-text-light;
+        font-family: chill;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+      }
+
+      .page__links {
+        color: $color-grey;
+        font-family: robo;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .bottom__nav-btn {
+        color: $color-background;
+        font-family: robo;
+        padding: 0.9rem 1.3rem;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 1rem;
+        background-color: $color-primary;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .cms {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      text-transform: uppercase;
+
+      .cms-heading {
+        color: $color-text-light;
+        font-family: chill;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+      }
+
+      .page__links {
+        color: $color-grey;
+        font-family: robo;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+
+    .utility__pages {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      text-transform: uppercase;
+
+      .utility__pages-heading {
+        color: $color-text-light;
+        font-family: chill;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+      }
+
+      .page__links {
+        color: $color-grey;
+        font-family: robo;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+  }
+
+  // ------------ credits section ----------------//
+
+  .credits {
+    padding: 1.5rem;
+    background-color: $color-surface;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    .credits-heading {
+      color: $color-grey;
+      font-size: 0.9rem;
+      text-align: center;
+      font-family: robo;
+      text-transform: uppercase;
+      font-weight: 500;
+
+      .credits__links {
+        color: $color-text-light;
+      }
+    }
+
+    .credtis-content {
+      color: $color-text-light;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: robo;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      font-weight: 400;
+
+      .top__btn {
+        border: 1px solid #494949;
+        background-color: #292929;
+        color: $color-text-light;
+        padding: 0.8rem;
+        border-radius: 50%;
+      }
+    }
+  }
 }
+
 //------Responisve for mobile view--------------//
 
 @media (min-width: 768px) {

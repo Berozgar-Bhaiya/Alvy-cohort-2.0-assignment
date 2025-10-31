@@ -53,10 +53,10 @@ body {
       color: #dcd9d5;
       border-radius: 50%;
       font-size: 1.1rem;
-      border: 1px solid #514e4c;
+      border: 1px solid #524f4c;
       padding: 0.6rem 0.65rem;
-      background-color: #7c7c7c73;
-      backdrop-filter: blur(4px);
+      background-color: #5a59592a;
+      backdrop-filter: blur(7px);
     }
   }
 
@@ -348,8 +348,12 @@ body {
   //------Team section---------------//
   .team {
     .team__content {
-      padding: 0 1em;
       padding: 1.2rem;
+
+      .team__content-findjob-btn {
+        display: none;
+      }
+
       .team__content-heading {
         font-size: 2rem;
         color: $color-text-light;
@@ -381,6 +385,7 @@ body {
       }
     }
   }
+
   //--------- Join team section ------------//
 
   .jointeam {
@@ -520,7 +525,7 @@ body {
     }
   }
 
-  // --------------pages----------------------//
+  // --------------pages section----------------------//
   .pages {
     display: flex;
     flex-direction: column;
@@ -663,6 +668,24 @@ body {
       }
     }
   }
+
+  // ----------- template section ---------------//
+  .template {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $color-text-light;
+    position: fixed;
+    margin: 1rem;
+    right: 0;
+    bottom: 0;
+    padding: 0.3rem 0.45rem;
+    border-radius: 0.2rem;
+
+    .template__img {
+      width: 1.3rem;
+    }
+  }
 }
 
 //------Responisve for mobile view--------------//
@@ -770,17 +793,175 @@ body {
             line-height: 3.5rem;
           }
 
-          .philosophy__description {
+          .vision__description {
             column-count: 2;
-            font-size: 1.27rem;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            gap: 1rem;
           }
         }
       }
     }
+
+    .team {
+      .team__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.4rem 1.5rem;
+
+        .team__content-heading {
+          font-size: 2.8rem;
+          color: $color-text-light;
+          font-weight: 500;
+          font-family: chill;
+          text-transform: uppercase;
+        }
+        .team__content-findjob-btn {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          .jointeam__btn {
+            border: 1px solid #3f3f3f;
+            border-radius: 50%;
+            color: #bebcb8;
+            padding: 0.6rem;
+            background-color: #1e1e1e;
+            color: $color-text-light;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+
+          .jointeam__btn-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-family: robo;
+            font-weight: 400;
+            color: $color-text-light;
+          }
+        }
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .card-1 {
+          border-radius: 1rem;
+          .card__bottom {
+            border-radius: 0.4rem;
+            -webkit-border-radius: 0.4rem;
+            -moz-border-radius: 0.4rem;
+            -ms-border-radius: 0.4rem;
+            -o-border-radius: 0.4rem;
+          }
+        }
+        .card-2 {
+          border-radius: 1rem;
+          .card__bottom {
+            border-radius: 0.4rem;
+          }
+        }
+        .card-3 {
+          border-radius: 1rem;
+          .card__bottom {
+            border-radius: 0.4rem;
+          }
+        }
+      }
+    }
+
+    .jointeam {
+      .jointeam__image-top {
+        border-radius: 1rem;
+      }
+
+      .jointeam__content {
+        border-radius: 1rem;
+        padding: 2.2rem 2.8rem;
+
+        .jointeam__text {
+          .jointeam__heading {
+            width: 85%;
+            font-size: 2.8rem;
+            line-height: 3.3rem;
+          }
+
+          .jointeam__actions {
+            margin-top: 8rem;
+          }
+        }
+      }
+    }
+
+    .contact {
+      gap: 1rem;
+      border-radius: 1rem;
+      padding: 2.5rem;
+
+      .contact__heading {
+        font-size: 4.1rem;
+        line-height: 4rem;
+      }
+
+      .contact__btn {
+        margin-top: 0.5rem;
+      }
+    }
+
+    .socialhandles {
+      padding: 2.5rem;
+      border-radius: 1rem;
+      gap: 8rem;
+    }
+
+    .pages {
+      border-radius: 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2.2rem 5rem 2.2rem 2.2rem;
+
+      .bottom__nav {
+        gap: 1.8rem;
+        .page__links {
+          letter-spacing: 1px;
+        }
+      }
+
+      .cms {
+        .page__links {
+          letter-spacing: 1px;
+        }
+      }
+
+      .utility__pages {
+        .page__links {
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .credits {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.8rem 1.8rem;
+      border-radius: 1rem;
+      .credtis-content {
+        margin-top: 0rem;
+      }
+    }
+
+    .template {
+      right: 0.8%;
+      bottom: 1.1%;
+      padding: 0.35rem 0.45rem;
+    }
   }
 }
 
-//------Responsive for tablet view--------------//
+//------Responsive for laptop view--------------//
 
 @media (min-width: 1024px) {
   .main {
@@ -883,6 +1064,7 @@ body {
     }
 
     .vision {
+      width: 100%;
       flex-direction: row;
 
       .vision__image-top {
@@ -911,6 +1093,67 @@ body {
         }
       }
     }
+
+    .team {
+      .team__content {
+        padding: 2.4rem 1.9rem;
+        .team__content-heading {
+          font-size: 2.2rem;
+        }
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .jointeam {
+      flex-direction: row;
+      .jointeam__image-top {
+        width: 50%;
+      }
+
+      .jointeam__content {
+        width: 50%;
+        padding: 2.8rem 2.8rem;
+
+        .jointeam__text {
+          .jointeam__heading {
+            width: 100%;
+            font-size: 2.17rem;
+            line-height: 2.5rem;
+          }
+
+          .jointeam__actions {
+            margin-top: 12rem;
+          }
+        }
+      }
+    }
+
+    .contact {
+      gap: 0.6rem;
+      border-radius: 1rem;
+      padding: 3rem;
+
+      .contact-heading-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .contact__heading {
+          font-size: 3.6rem;
+          line-height: 3.6rem;
+        }
+
+        .contact__btn {
+          white-space: nowrap;;
+          margin-top: 0.38rem 1rem;
+        }
+      }
+    }
+
+    
   }
 }
 

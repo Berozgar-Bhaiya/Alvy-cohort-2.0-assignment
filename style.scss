@@ -497,131 +497,132 @@ body {
   }
 
   // ---------- socialmedia handles section --------------//
-
-  .socialhandles {
-    background-color: $color-surface;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-
-    .socialhandles__icons {
-      display: flex;
-      gap: 0.6rem;
-
-      .icon {
-        color: $color-text-light;
-        border-radius: 50%;
-        font-size: 1.1rem;
-        border: 1px solid #494949;
-        padding: 0.6rem 0.65rem;
-        background-color: #292929;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-      }
-    }
-  }
-
-  // --------------pages section----------------------//
-  .pages {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    background-color: $color-surface;
-
-    .bottom__nav {
+  .footer__bottom {
+    .socialhandles {
+      background-color: $color-surface;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 1.5rem;
-      text-transform: uppercase;
+      gap: 5rem;
 
-      .bottom__nav-heading {
-        color: $color-text-light;
-        font-family: chill;
-        font-size: 1.3rem;
-        font-weight: 400;
-        letter-spacing: 0.8px;
+      .socialhandles__icons {
+        display: flex;
+        gap: 0.6rem;
+
+        .icon {
+          color: $color-text-light;
+          border-radius: 50%;
+          font-size: 1.1rem;
+          border: 1px solid #494949;
+          padding: 0.6rem 0.65rem;
+          background-color: #292929;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
       }
+    }
 
-      .page__links {
-        color: $color-grey;
-        font-family: robo;
-        font-size: 0.9rem;
-        letter-spacing: 0.3px;
-        text-decoration: none;
-        font-weight: 600;
-      }
+    // --------------pages section----------------------//
+    .pages {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      background-color: $color-surface;
 
-      .bottom__nav-btn {
-        color: $color-background;
-        font-family: robo;
-        padding: 0.9rem 1.3rem;
-        border-radius: 0.5rem;
-        border: none;
-        font-size: 1rem;
-        background-color: $color-primary;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
+      .bottom__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
         text-transform: uppercase;
-      }
-    }
 
-    .cms {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.5rem;
-      text-transform: uppercase;
+        .bottom__nav-heading {
+          color: $color-text-light;
+          font-family: chill;
+          font-size: 1.3rem;
+          font-weight: 400;
+          letter-spacing: 0.8px;
+        }
 
-      .cms-heading {
-        color: $color-text-light;
-        font-family: chill;
-        font-size: 1.3rem;
-        font-weight: 400;
-        letter-spacing: 0.8px;
-      }
+        .page__links {
+          color: $color-grey;
+          font-family: robo;
+          font-size: 0.9rem;
+          letter-spacing: 0.3px;
+          text-decoration: none;
+          font-weight: 600;
+        }
 
-      .page__links {
-        color: $color-grey;
-        font-family: robo;
-        font-size: 0.9rem;
-        letter-spacing: 0.3px;
-        text-decoration: none;
-        font-weight: 600;
-      }
-    }
-
-    .utility__pages {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.5rem;
-      text-transform: uppercase;
-
-      .utility__pages-heading {
-        color: $color-text-light;
-        font-family: chill;
-        font-size: 1.3rem;
-        font-weight: 400;
-        letter-spacing: 0.8px;
+        .bottom__nav-btn {
+          color: $color-background;
+          font-family: robo;
+          padding: 0.9rem 1.3rem;
+          border-radius: 0.5rem;
+          border: none;
+          font-size: 1rem;
+          background-color: $color-primary;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+          text-transform: uppercase;
+        }
       }
 
-      .page__links {
-        color: $color-grey;
-        font-family: robo;
-        font-size: 0.9rem;
-        letter-spacing: 0.3px;
-        text-decoration: none;
-        font-weight: 600;
+      .cms {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        text-transform: uppercase;
+
+        .cms-heading {
+          color: $color-text-light;
+          font-family: chill;
+          font-size: 1.3rem;
+          font-weight: 400;
+          letter-spacing: 0.8px;
+        }
+
+        .page__links {
+          color: $color-grey;
+          font-family: robo;
+          font-size: 0.9rem;
+          letter-spacing: 0.3px;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+
+      .utility__pages {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        text-transform: uppercase;
+
+        .utility__pages-heading {
+          color: $color-text-light;
+          font-family: chill;
+          font-size: 1.3rem;
+          font-weight: 400;
+          letter-spacing: 0.8px;
+        }
+
+        .page__links {
+          color: $color-grey;
+          font-family: robo;
+          font-size: 0.9rem;
+          letter-spacing: 0.3px;
+          text-decoration: none;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -1147,13 +1148,77 @@ body {
         }
 
         .contact__btn {
-          white-space: nowrap;;
+          white-space: nowrap;
           margin-top: 0.38rem 1rem;
         }
       }
     }
 
-    
+    .footer__bottom {
+      display: grid;
+      grid-template-columns: 20% 1fr;
+      gap: 1rem;
+      grid-template-areas:
+        "socialhandles pages"
+        "socialheader credits";
+
+      .socialhandles {
+        border-radius: 1rem;
+        grid-area: socialhandles;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+        padding: 3rem;
+        .socialhandles__icons {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.6rem;
+        }
+      }
+
+      .pages {
+        border-radius: 1rem;
+        grid-area: pages;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 2.8rem 4rem 2.8rem 2.8rem;
+        gap: 5rem;
+
+        .bottom__nav {
+          gap: 1.8rem;
+          .page__links {
+            font-size: 0.9rem;
+            letter-spacing: 0.6px;
+          }
+        }
+
+        .cms {
+          gap: 1.8rem;
+          .page__links {
+            font-size: 0.9rem;
+            letter-spacing: 0.6px;
+          }
+        }
+
+        .utility__pages {
+          gap: 1.8rem;
+          .page__links {
+            font-size: 0.9rem;
+            letter-spacing: 0.6px;
+          }
+        }
+      }
+    }
+
+    .credits {
+      grid-area: credits;
+      padding: 2.7rem 1.8rem;
+      background-color: $color-surface;
+      border-radius: 1rem;
+    }
   }
 }
 

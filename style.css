@@ -1172,6 +1172,60 @@ body {
     gap: 1.7rem;
     font-size: 1.25rem;
   }
+  .main .team .team__content .team__content-heading {
+    font-size: 3.1rem;
+  }
+  .main .jointeam .jointeam__content {
+    padding: 4.5rem 3.3rem;
+  }
+  .main .jointeam .jointeam__content .jointeam__text .jointeam__heading {
+    width: 100%;
+    font-size: 3.1rem;
+    line-height: 3.5rem;
+  }
+  .main .jointeam .jointeam__content .jointeam__text .jointeam__actions {
+    margin-top: 12rem;
+  }
+  .main .contact {
+    gap: 0.6rem;
+    padding: 4rem;
+  }
+  .main .contact .contact-heading-btn .contact__heading {
+    width: 82%;
+    font-size: 5rem;
+    line-height: 5.3rem;
+  }
+  .main .contact .contact-heading-btn .contact__btn {
+    white-space: nowrap;
+    margin-top: 0.38rem 1rem;
+  }
+  .main .footer__bottom .pages {
+    margin: 0;
+    padding: 2.8rem 8rem 2.8rem 2.8rem;
+    justify-content: flex-start;
+    gap: 12rem;
+  }
+  .main .footer__bottom .pages .bottom__nav {
+    gap: 1.8rem;
+  }
+  .main .footer__bottom .pages .bottom__nav .page__links {
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+  }
+  .main .footer__bottom .pages .cms {
+    gap: 1.8rem;
+  }
+  .main .footer__bottom .pages .cms .page__links {
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+  }
+  .main .footer__bottom .pages .utility__pages {
+    gap: 1.8rem;
+  }
+  .main .footer__bottom .pages .utility__pages .page__links {
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+  }
 }
 @media (min-width: 2560px) {
   .main {
@@ -1229,5 +1283,37 @@ body {
   .main .vision .vision__content .vision__text .vision__description {
     gap: 1.8rem;
     font-size: 1.27rem;
+  }
+  .main .jointeam .jointeam__content {
+    padding: 4.5rem 3.3rem;
+  }
+  .main .jointeam .jointeam__content .jointeam__text .jointeam__heading {
+    width: 80%;
+    font-size: 3.1rem;
+    line-height: 3.5rem;
+  }
+  .main .jointeam .jointeam__content .jointeam__text .jointeam__actions {
+    margin-top: 19rem;
+  }
+  .main .contact {
+    padding: 4rem;
+  }
+  .main .contact .contact-heading-btn .contact__heading {
+    width: 55%;
+    font-size: 5rem;
+    line-height: 5.3rem;
+  }
+  .main .contact .contact-heading-btn .contact__btn {
+    padding: 1rem 1.5rem;
+    white-space: nowrap;
+    margin-top: 0.38rem 1rem;
+  }
+  .main .footer__bottom .pages {
+    gap: 20rem;
+  }
+  .main .template {
+    right: 0.2%;
+    bottom: 0.18%;
+    padding: 0.35rem 0.45rem;
   }
 }/*# sourceMappingURL=style.css.map */

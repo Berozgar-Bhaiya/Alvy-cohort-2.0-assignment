@@ -1,0 +1,74 @@
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin button($color, $background-color) {
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: $color;
+  background-color: $background-color;
+  font-family: robo;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@mixin styles(
+  $family: null,
+  $size: null,
+  $weight: null,
+  $transform: null,
+  $color: null,
+  $bgc: null
+) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $transform;
+  color: $color;
+  background-color: $bgc;
+}
+
+@mixin card {
+  @include flex(column, space-between);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+@mixin card_design {
+  .card__top {
+    @include flex(row, flex-end, stretch, 0.6rem);
+    padding: 2.3rem 2.5rem;
+
+    .icon {
+      @include styles(null, 1.1rem, null, null, #dcd9d5, #5a59592a);
+      border: 1px solid #524f4c;
+      padding: 0.6rem 0.65rem;
+      border-radius: 50%;
+      backdrop-filter: blur(7px);
+    }
+  }
+
+  .card__bottom {
+    border-radius: 0.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    @include flex(row, space-between, center);
+    border: 1px solid #6e645f;
+    background-color: #75727273;
+    backdrop-filter: blur(1rem);
+
+    .card__bottom-heading {
+      @include styles(chill, 1.35rem, 500, uppercase, $color-text-light);
+    }
+
+    .card__bottom-role {
+      @include styles(robo, 1rem, 400, uppercase, $color-text-light);
+    }
+  }
+}

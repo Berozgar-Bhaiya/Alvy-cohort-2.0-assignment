@@ -59,12 +59,14 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 .main .main__nav .main__nav-menu .nav__btn:hover {
   background-color: #282828;
 }
 .main .main__nav .main__nav-menu .git_btn {
   display: none;
+  transition: all 0.3s linear;
 }
 .main .main__nav .main__nav-menu .git_btn:hover {
   background-color: #b4a55f;
@@ -614,10 +616,14 @@ body {
   font-size: 1.1rem;
   color: #f4f2ed;
   background-color: #292929;
-  cursor: pointer;
   border-radius: 50%;
   border: 1px solid #494949;
   padding: 0.6rem 0.65rem;
+  transition: all 0.2s linear;
+}
+.main .footer__bottom .socialhandles .socialhandles__icons .icon:hover {
+  border-color: #9e9d9a;
+  cursor: pointer;
 }
 .main .footer__bottom .pages {
   display: flex;
@@ -652,6 +658,11 @@ body {
   color: #9e9d9a;
   letter-spacing: 0.3px;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+.main .footer__bottom .pages .bottom__nav .page__links:hover {
+  color: #f4f2ed;
+  border-bottom: 2px solid rgb(194, 193, 193);
 }
 .main .footer__bottom .pages .bottom__nav .bottom__nav-btn {
   font-family: robo;
@@ -664,6 +675,10 @@ body {
   padding: 0.9rem 1.3rem;
   border-radius: 0.5rem;
   border: none;
+  transition: all 0.3s linear;
+}
+.main .footer__bottom .pages .bottom__nav .bottom__nav-btn:hover {
+  background-color: #b4a55f;
 }
 .main .footer__bottom .pages .cms {
   display: flex;
@@ -687,6 +702,11 @@ body {
   color: #9e9d9a;
   letter-spacing: 0.3px;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+.main .footer__bottom .pages .cms .page__links:hover {
+  color: #f4f2ed;
+  border-bottom: 2px solid rgb(194, 193, 193);
 }
 .main .footer__bottom .pages .utility__pages {
   display: flex;
@@ -710,6 +730,11 @@ body {
   color: #9e9d9a;
   letter-spacing: 0.3px;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+.main .footer__bottom .pages .utility__pages .page__links:hover {
+  color: #f4f2ed;
+  border-bottom: 2px solid rgb(194, 193, 193);
 }
 .main .credits {
   padding: 1.5rem;
@@ -992,6 +1017,7 @@ body {
     font-size: 0.9rem;
     font-weight: 400;
     display: block;
+    transition: all 0.3s linear;
   }
   .main .main__nav .main__nav-menu .btn:hover {
     background-color: #282828;

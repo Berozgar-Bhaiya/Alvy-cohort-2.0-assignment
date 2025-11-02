@@ -60,8 +60,14 @@ body {
   font-weight: 400;
   cursor: pointer;
 }
+.main .main__nav .main__nav-menu .nav__btn:hover {
+  background-color: #282828;
+}
 .main .main__nav .main__nav-menu .git_btn {
   display: none;
+}
+.main .main__nav .main__nav-menu .git_btn:hover {
+  background-color: #b4a55f;
 }
 .main .main__nav .main__nav-menu .btn {
   display: none;
@@ -136,6 +142,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 .main .studio .studio__content .studio__text .studio__actions .studio__btn {
   border: 1px solid #474747;
@@ -322,6 +329,10 @@ body {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
 }
+.main .team .cards .card-1 .card__top .icon:hover {
+  cursor: pointer;
+  border-color: #9e9d9a;
+}
 .main .team .cards .card-1 .card__bottom {
   border-radius: 0.2rem;
   margin: 1rem;
@@ -379,6 +390,10 @@ body {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
 }
+.main .team .cards .card-2 .card__top .icon:hover {
+  cursor: pointer;
+  border-color: #9e9d9a;
+}
 .main .team .cards .card-2 .card__bottom {
   border-radius: 0.2rem;
   margin: 1rem;
@@ -435,6 +450,10 @@ body {
   border-radius: 50%;
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
+}
+.main .team .cards .card-3 .card__top .icon:hover {
+  cursor: pointer;
+  border-color: #9e9d9a;
 }
 .main .team .cards .card-3 .card__bottom {
   border-radius: 0.2rem;
@@ -518,6 +537,10 @@ body {
   padding: 0.65rem 0.7rem;
   background-color: #292929;
   color: #f4f2ed;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .main .jointeam .jointeam__content .jointeam__text .jointeam__actions .jointeam__btn-text {
   font-family: robo;
@@ -734,6 +757,7 @@ body {
   bottom: 0;
   padding: 0.3rem 0.45rem;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 .main .template .template__img {
   width: 1.3rem;
@@ -968,6 +992,9 @@ body {
     font-size: 0.9rem;
     font-weight: 400;
     display: block;
+  }
+  .main .main__nav .main__nav-menu .btn:hover {
+    background-color: #282828;
   }
   .main .main__nav .main__nav-menu .ri-menu-line {
     display: none;

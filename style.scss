@@ -35,10 +35,16 @@ body {
       .nav__btn {
         @include button($color-text-light, $color-surface);
         cursor: pointer;
+        &:hover {
+          background-color: #282828;
+        }
       }
 
       .git_btn {
         display: none;
+        &:hover {
+          background-color: #b4a55f;
+        }
       }
 
       .btn {
@@ -111,6 +117,7 @@ body {
         .studio__actions {
           @include flex(row, flex-start, center, 0.5rem);
           margin-top: 1rem;
+          cursor: pointer;
 
           .studio__btn {
             border: 1px solid #474747;
@@ -304,6 +311,10 @@ body {
             padding: 0.65rem 0.7rem;
             background-color: #292929;
             color: $color-text-light;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
           }
 
           .jointeam__btn-text {
@@ -488,6 +499,7 @@ body {
     bottom: 0;
     padding: 0.3rem 0.45rem;
     border-radius: 0.2rem;
+    cursor: pointer;
 
     .template__img {
       width: 1.3rem;
@@ -759,6 +771,9 @@ body {
         .btn {
           @include button($color-text-light, $color-surface);
           display: block;
+          &:hover {
+            background-color: #282828;
+          }
         }
         .ri-menu-line {
           display: none;

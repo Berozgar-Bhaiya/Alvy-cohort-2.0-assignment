@@ -1,14 +1,14 @@
 @font-face {
   font-family: robo;
-  src: url(Assets/robotomono.woff2);
+  src: url(Assets/Fonts/robotomono.woff2);
 }
 @font-face {
   font-family: chill;
-  src: url(Assets/Chillax-Regular.otf);
+  src: url(Assets/Fonts/Chillax-Regular.otf);
 }
 @font-face {
   font-family: satoshi;
-  src: url(Assets/Satoshi-Light.woff);
+  src: url(Assets/Fonts/Satoshi-Light.woff);
 }
 * {
   margin: 0;
